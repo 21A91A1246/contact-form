@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="innerDiv">
+            
+            <form id="contactForm">
+                <h3>Contact Us</h3>
+                <div style="display: flex; gap: 10px; ">
+                    <div>
+                        <label for="fName" >First Name *</label> <br>
+                        <input type="text" id="fName" name="fName" required style="height: 27px; width: 100%;">
+                    </div>
+                    <div>
+                        <label for="">Last Name *</label>  <br>
+                        <input type="text" required style="height: 27px; width: 100%;">
+                    </div>
+                </div>
+                
+                
+                    <label for="email">Email Address *</label> <br>
+                    <input type="email" id="email" name="email" required style="height: 27px; width: 100%;">
+                <br>
+                <label for="qType">Query Type *</label> <br>
+                <input type="radio"  id="qType" name="qType" required> <span style="border: 1px solid; font-family: sans-serif; font-size: 12px; padding-right: 70px;margin-top: 20px; padding-top: 5px;padding-bottom: 5px;border-radius: 3px;opacity: 60%;">General Query</span>
+                <input type="radio"  id="qType" name="qType" required> <span style="border: 1px solid; font-family: sans-serif; font-size: 12px;padding-right: 70px;margin-top: 20px; padding-top: 5px;padding-bottom: 5px;border-radius: 3px;opacity: 60%;">Support Request</span>
+                <br>
+                <label for="msg">Message *</label> <br>
+                <input type="text" id="msg" name="msg" required style="height: 50px; width: 100%;">
+                <br>
+                <div style="margin-top: 15px;">
+                    <input type="checkbox"  required> 
+                    <label>I consider to being contacted by the team *</label>
+                </div>
+                
+                <br>
+                <button type="submit">Submit</button>
+               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
